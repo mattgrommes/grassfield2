@@ -1,0 +1,21 @@
+{
+  "name": "grassfield2",
+  "version": "0.0.1",
+  "description": "grassfield2",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "p5": "*",
+    "ccapture.js": "*"
+  },
+  "engines": {
+    "node": "8.x"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ]
+}
