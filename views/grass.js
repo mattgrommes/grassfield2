@@ -1,3 +1,8 @@
+/* global canvas, createCanvas, mouseIsPressed, fill, mouseX, mouseY, rect, strokeWeight, translate, push, pop, random,
+  text, textAlign, textSize, CENTER, noLoop, ellipse, frameRate, button, createButton, createDiv, frameCount, saveCanvas,
+  noise, windowWidth, windowHeight, WEBGL, width, height, CCapture, angleMode, DEGREES, Grass, clear, background, rotateX, 
+  stroke, noFill, key, map, bezier */
+
 function Grass() {
 
   this.x = 0;
@@ -27,8 +32,6 @@ function Grass() {
       this.topPoint = random(-30,30);
     }
 
-    console.log("T: "+this.topPoint)
-    console.log("H: "+this.height)
     noFill();
     push();
     translate(this.x, this.y)

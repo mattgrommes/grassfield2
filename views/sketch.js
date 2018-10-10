@@ -1,3 +1,7 @@
+/* global canvas, createCanvas, mouseIsPressed, fill, mouseX, mouseY, rect, strokeWeight, translate, push, pop, random,
+  text, textAlign, textSize, CENTER, noLoop, ellipse, frameRate, button, createButton, createDiv, frameCount, saveCanvas,
+  noise, windowWidth, windowHeight, WEBGL, width, height, CCapture, angleMode, DEGREES, Grass, clear, background, rotateX, 
+  stroke, noFill, key */
 
 var cols, rows;
 var scl = 20;
@@ -28,8 +32,8 @@ function setup() {
 
   for (var x = 0; x < w; x+=random(2,6)) {
     for (var y = 0; y < h; y+=random(3,7)) {
-      n = noise(y, x);
-      rand = random();
+      var n = noise(y, x);
+      var rand = random();
       if(rand > 0.96) {
         var g = new Grass();
         g.x = x;
